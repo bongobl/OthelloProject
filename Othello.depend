@@ -1,0 +1,72 @@
+# depslib dependency file v1.0
+1498119367 source:c:\users\alex\desktop\sf\othelloproject\othello\main.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"StateManager.hpp"
+
+1498123771 c:\users\alex\desktop\sf\othelloproject\othello\statemanager.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"States/State.hpp"
+	"JukeBox.hpp"
+
+1498020235 c:\users\alex\desktop\sf\othelloproject\othello\gameobjects\board.hpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	<vector>
+	"Slot.hpp"
+
+1498166371 source:c:\users\alex\desktop\sf\othelloproject\othello\statemanager.cpp
+	"StateManager.hpp"
+	"States/MainMenuState.hpp"
+	"States/PlayState.hpp"
+	"States/StatState.hpp"
+	"States/CreditsState.hpp"
+	<typeinfo>
+
+1498166657 c:\users\alex\desktop\sf\othelloproject\othello\gameobjects\piece.hpp
+	<iostream>
+
+1498018611 c:\users\alex\desktop\sf\othelloproject\othello\gameobjects\slot.hpp
+	"Piece.hpp"
+
+1497846234 c:\users\alex\desktop\sf\othelloproject\othello\states\state.hpp
+	"../StateManager.hpp"
+
+1498120131 c:\users\alex\desktop\sf\othelloproject\othello\states\playstate.hpp
+	"State.hpp"
+	"../GameObjects/Board.hpp"
+	"../GameObjects/Piece.hpp"
+	"../GameObjects/Slot.hpp"
+
+1498164877 source:c:\users\alex\desktop\sf\othelloproject\othello\states\playstate.cpp
+	"PlayState.hpp"
+	<cmath>
+
+1498108260 c:\users\alex\desktop\sf\othelloproject\othello\states\statstate.hpp
+	"State.hpp"
+	"../GameObjects/Piece.hpp"
+
+1498120248 source:c:\users\alex\desktop\sf\othelloproject\othello\states\statstate.cpp
+	"StatState.hpp"
+	<sstream>
+	<cmath>
+
+1498166181 c:\users\alex\desktop\sf\othelloproject\othello\states\mainmenustate.hpp
+	"State.hpp"
+	"../GameObjects/Piece.hpp"
+
+1498166283 source:c:\users\alex\desktop\sf\othelloproject\othello\states\mainmenustate.cpp
+	"MainMenuState.hpp"
+	"iostream"
+
+1498120074 c:\users\alex\desktop\sf\othelloproject\othello\jukebox.hpp
+	<SFML/Audio.hpp>
+	<iostream>
+
+1498164664 c:\users\alex\desktop\sf\othelloproject\othello\states\creditsstate.hpp
+	"State.hpp"
+
+1498164820 source:c:\users\alex\desktop\sf\othelloproject\othello\states\creditsstate.cpp
+	"CreditsState.hpp"
+
