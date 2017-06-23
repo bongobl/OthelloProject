@@ -61,8 +61,6 @@ void PlayState::init(){
 
     quitButtonSprite.setTexture(quitButtonOff);
 
-
-
 }
 void PlayState::handleInput(sf::Event &event){
 
@@ -83,6 +81,8 @@ void PlayState::handleInput(sf::Event &event){
                     //check for flanks
                     if(!othelloBoard.flankPieces(i,j)){
                         othelloBoard.slotAt(i,j).removePiece();
+                        currPlayerText.setString("**Invalid Move**");
+                        currPlayerText.setFillColor(sf::Color::Red);
                         break;
                     }
                     manager->getJukeBox().playSound(1);
