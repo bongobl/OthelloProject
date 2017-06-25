@@ -81,6 +81,7 @@ void PlayState::handleInput(sf::Event &event){
                     //check for flanks
                     if(!othelloBoard.flankPieces(i,j)){
                         othelloBoard.slotAt(i,j).removePiece();
+                        manager->getJukeBox().playSound(JukeBox::ERROR);
                         currPlayerText.setString("**Invalid Move**");
                         currPlayerText.setFillColor(sf::Color::Red);
                         break;

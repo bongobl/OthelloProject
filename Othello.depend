@@ -4,7 +4,7 @@
 	<iostream>
 	"StateManager.hpp"
 
-1498123771 c:\users\alex\desktop\sf\othelloproject\othello\statemanager.hpp
+1498365850 c:\users\alex\desktop\sf\othelloproject\othello\statemanager.hpp
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	"States/State.hpp"
@@ -39,7 +39,7 @@
 	"../GameObjects/Piece.hpp"
 	"../GameObjects/Slot.hpp"
 
-1498182322 source:c:\users\alex\desktop\sf\othelloproject\othello\states\playstate.cpp
+1498366475 source:c:\users\alex\desktop\sf\othelloproject\othello\states\playstate.cpp
 	"PlayState.hpp"
 	<cmath>
 
@@ -60,7 +60,7 @@
 	"MainMenuState.hpp"
 	"iostream"
 
-1498182377 c:\users\alex\desktop\sf\othelloproject\othello\jukebox.hpp
+1498366622 c:\users\alex\desktop\sf\othelloproject\othello\jukebox.hpp
 	<SFML/Audio.hpp>
 	<iostream>
 
@@ -69,4 +69,7 @@
 
 1498181862 source:c:\users\alex\desktop\sf\othelloproject\othello\states\creditsstate.cpp
 	"CreditsState.hpp"
+
+1498366759 source:c:\users\alex\desktop\sf\othelloproject\othello\jukebox.cpp
+	"JukeBox.hpp"
 
