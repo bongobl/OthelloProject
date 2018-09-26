@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
-project(SFMLTest)
+project(Othello)
 
-set(SFML_STATIC_LIBRARIES TRUE)
+#set(SFML_STATIC_LIBRARIES TRUE)
 
 find_package(SFML COMPONENTS graphics window system audio) 
 
@@ -34,13 +34,13 @@ set(RESOURCE_DIRECTORIES
     "Resources/"
 )
 
-add_executable(SFMLTest "${INCLUDE_FILES}" "${SOURCE_FILES}")
-target_include_directories(SFMLTest PRIVATE "${INCLUDE_DIRECTORY}")
-target_link_libraries(SFMLTest sfml-graphics sfml-audio)
+add_executable(Othello "${INCLUDE_FILES}" "${SOURCE_FILES}")
+target_include_directories(Othello PRIVATE "${INCLUDE_DIRECTORY}")
+target_link_libraries(Othello sfml-graphics sfml-audio)
 
 foreach(RESOURCE_DIRECTORY ${RESOURCE_DIRECTORIES})
     add_custom_command(
-        TARGET SFMLTest POST_BUILD
+        TARGET Othello POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_directory
             "${CMAKE_SOURCE_DIR}/${RESOURCE_DIRECTORY}"
             "${CMAKE_BINARY_DIR}/${RESOURCE_DIRECTORY}"
