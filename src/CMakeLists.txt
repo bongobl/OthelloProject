@@ -3,24 +3,15 @@ cmake_minimum_required(VERSION 3.0)
 project(Othello)
 
 
+set(OTHELLO_INCLUDE_DIRECTORY "${CMAKE_SOURCE_DIR}/include/")
+set(SFML_INCLUDE_DIRECTORY "${CMAKE_SOURCE_DIR}/external/SFML/include")
 
-find_package(SFML 2 COMPONENTS graphics window audio system) 
-
-set(INCLUDE_DIRECTORY "${CMAKE_SOURCE_DIR}/include/")
-set(INCLUDE_FILES
-	"${INCLUDE_DIRECTORY}/Board.hpp"
-	"${INCLUDE_DIRECTORY}/CreditsState.hpp"
-	"${INCLUDE_DIRECTORY}/JukeBox.hpp"
-	"${INCLUDE_DIRECTORY}/MainMenuState.hpp"
-	"${INCLUDE_DIRECTORY}/Piece.hpp"
-	"${INCLUDE_DIRECTORY}/PlayState.hpp"
-	"${INCLUDE_DIRECTORY}/Slot.hpp"
-	"${INCLUDE_DIRECTORY}/State.hpp"
-	"${INCLUDE_DIRECTORY}/StateManager.hpp"
-	"${INCLUDE_DIRECTORY}/StatState.hpp"
+set(ALL_INCLUDE_DIRECTORIES 
+	"${OTHELLO_INCLUDE_DIRECTORY}"
+	"${SFML_INCLUDE_DIRECTORY}"
 )
 
-set(SOURCE_DIRECTORY "${CMAKE_SOURCE_DIR}/src/" )
+set(SOURCE_DIRECTORY "${CMAKE_SOURCE_DIR}/src/")
 set(SOURCE_FILES 
 	"${SOURCE_DIRECTORY}/CreditsState.cpp"
 	"${SOURCE_DIRECTORY}/JukeBox.cpp"
@@ -31,14 +22,22 @@ set(SOURCE_FILES
 	"${SOURCE_DIRECTORY}/StatState.cpp"
 )
 
+
+
+add_executable(Othello "${SOURCE_FILES}")
+target_include_directories(Othello PRIVATE "${ALL_INCLUDE_DIRECTORIES}")
+
+link_directories("${CMAKE_BINARY_DIR}/external/SFML/lib")
+
+
+target_link_libraries(Othello sfml-graphics sfml-audio)
+
+
 set(RESOURCE_DIRECTORIES
     "Resources/"
 )
 
-add_executable(Othello "${INCLUDE_FILES}" "${SOURCE_FILES}")
-target_include_directories(Othello PRIVATE "${INCLUDE_DIRECTORY}")
-target_link_libraries(Othello sfml-graphics sfml-audio)
-
+#copy resources
 foreach(RESOURCE_DIRECTORY ${RESOURCE_DIRECTORIES})
     add_custom_command(
         TARGET Othello POST_BUILD
