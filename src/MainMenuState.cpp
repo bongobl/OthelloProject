@@ -1,3 +1,4 @@
+#include <cmath>
 #include "../include/MainMenuState.hpp"
 #include "iostream"
 using namespace std;

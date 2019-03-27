@@ -1,3 +1,4 @@
+#include <cmath>
 #include "../include/CreditsState.hpp"
 
 CreditsState::CreditsState(StateManager* m, sf::RenderWindow &win) : State(m,win){
