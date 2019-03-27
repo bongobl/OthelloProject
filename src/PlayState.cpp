@@ -140,8 +140,6 @@ void PlayState::update(sf::Time &deltaTime){
 void PlayState::draw(sf::RenderWindow &window){
 
     this->window.draw(othelloBoard);
-    this->window.draw(cursorPiece);
-
 
     for(int i = 0; i < 8; ++i){
         for(int j = 0; j < 8; ++j){
@@ -151,6 +149,7 @@ void PlayState::draw(sf::RenderWindow &window){
             }
         }
     }
+    this->window.draw(cursorPiece);
     this->window.draw(title);
     this->window.draw(currPlayerText);
     this->window.draw(quitButtonSprite);

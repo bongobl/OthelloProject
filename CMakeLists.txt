@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.0)
 project(Othello)
 
-#set(SFML_STATIC_LIBRARIES TRUE)
 
-find_package(SFML COMPONENTS graphics window system audio) 
+
+find_package(SFML 2 COMPONENTS graphics window audio system) 
 
 set(INCLUDE_DIRECTORY "${CMAKE_SOURCE_DIR}/include/")
 set(INCLUDE_FILES
