@@ -1,16 +1,16 @@
 #include <JukeBox.hpp>
 JukeBox::JukeBox(){
-    if(!clickSoundBuffer.loadFromFile("Resources/Audio/Click.wav")){
+    if(!clickSoundBuffer.loadFromFile("Resources/Audio/Click.ogg")){
         cerr << "Couldn't load ClickSound" << endl;
         exit(-1);
     }
 
-    if(!pieceSoundBuffer.loadFromFile("Resources/Audio/PlacePiece.wav")){
+    if(!pieceSoundBuffer.loadFromFile("Resources/Audio/PlacePiece.ogg")){
         cerr << "Couldn't load PieceSound" << endl;
         exit(-1);
     }
 
-    if(!errorSoundBuffer.loadFromFile("Resources/Audio/ErrorSound.wav")){
+    if(!errorSoundBuffer.loadFromFile("Resources/Audio/ErrorSound.ogg")){
         cerr << "Couldn't load ErrorSound" << endl;
         exit(-1);
     }

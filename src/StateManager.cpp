@@ -15,7 +15,7 @@ void StateManager::init(){
     currState = new MainMenuState(this,window);
     currState->init();
 
-    if(!backgroundMusic.openFromFile("Resources/Audio/Guitar_western_blues.wav")){
+    if(!backgroundMusic.openFromFile("Resources/Audio/GuitarWesternBlues.ogg")){
         cerr << "Couldn't load music" << endl;
         exit(-1);
     }

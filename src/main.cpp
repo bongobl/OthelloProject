@@ -8,6 +8,7 @@ int main(void){
 
     sf::RenderWindow window(sf::VideoMode(1280, 860), "Othello", sf::Style::Titlebar | sf::Style::Close);
     window.setKeyRepeatEnabled(false);
+    window.setFramerateLimit(60);
 
     StateManager stateManager(window);
     stateManager.init();    /**Init*/
