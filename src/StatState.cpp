@@ -1,6 +1,7 @@
-#include "../include/StatState.hpp"
 #include <sstream>
 #include <cmath>
+#include <StatState.hpp>
+
 StatState::StatState(StateManager* m, sf::RenderWindow &win, int whiteChips, int blackChips) : State(m,win), whitePiece(Piece::WHITE) ,blackPiece(Piece::BLACK){
     this->whiteChips = whiteChips;
     this->blackChips = blackChips;

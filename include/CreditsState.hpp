@@ -1,6 +1,6 @@
 #ifndef CREDITS_STATE
 #define CREDITS_STATE
-#include "State.hpp"
+#include <State.hpp>
 class CreditsState : public State{
 
     sf::Texture woodTexture;

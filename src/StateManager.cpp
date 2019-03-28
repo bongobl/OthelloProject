@@ -1,10 +1,11 @@
-#include "StateManager.hpp"
-#include "../include/MainMenuState.hpp"
-#include "../include/PlayState.hpp"
-#include "../include/StatState.hpp"
-#include "../include/CreditsState.hpp"
-
 #include <typeinfo>
+
+#include <StateManager.hpp>
+#include <MainMenuState.hpp>
+#include <PlayState.hpp>
+#include <StatState.hpp>
+#include <CreditsState.hpp>
+
 StateManager::StateManager(sf::RenderWindow &win) : window(win){
 
 }

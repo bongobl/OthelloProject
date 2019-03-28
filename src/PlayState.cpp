@@ -1,6 +1,6 @@
-#include "../include/PlayState.hpp"
-
 #include <cmath>
+#include <PlayState.hpp>
+
 
 float getDistance(sf::Vector2f v1, sf::Vector2f v2){
 

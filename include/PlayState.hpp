@@ -1,9 +1,9 @@
 #ifndef PLAY_STATE
 #define PLAY_STATE
-#include "State.hpp"
-#include "Board.hpp"
-#include "Piece.hpp"
-#include "Slot.hpp"
+#include <State.hpp>
+#include <Board.hpp>
+#include <Piece.hpp>
+#include <Slot.hpp>
 
 
 class PlayState : public State{

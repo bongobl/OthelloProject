@@ -3,7 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <vector>
-#include "Slot.hpp"
+#include <Slot.hpp>
 using namespace std;
 
 

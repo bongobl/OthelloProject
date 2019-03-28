@@ -1,6 +1,6 @@
 #ifndef SLOT
 #define SLOT
-#include "Piece.hpp"
+#include <Piece.hpp>
 class Slot : public sf::CircleShape{
     Piece* slotPiece;
 

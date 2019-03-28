@@ -1,4 +1,4 @@
-#include "../include/JukeBox.hpp"
+#include <JukeBox.hpp>
 JukeBox::JukeBox(){
     if(!clickSoundBuffer.loadFromFile("Resources/Audio/Click.wav")){
         cerr << "Couldn't load ClickSound" << endl;

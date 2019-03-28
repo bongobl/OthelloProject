@@ -1,7 +1,7 @@
 #ifndef MAIN_MENU
 #define MAIN_MENU
-#include "State.hpp"
-#include "Piece.hpp"
+#include <State.hpp>
+#include <Piece.hpp>
 class MainMenuState : public State{
 
     sf::Texture woodTexture;

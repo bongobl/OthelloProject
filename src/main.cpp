@@ -1,6 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include "../include/StateManager.hpp"
+#include <StateManager.hpp>
 
 using namespace std;
 int main(void){

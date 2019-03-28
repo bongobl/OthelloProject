@@ -1,7 +1,9 @@
 #include <cmath>
-#include "../include/MainMenuState.hpp"
-#include "iostream"
+#include <iostream>
+#include <MainMenuState.hpp>
+
 using namespace std;
+
 MainMenuState::MainMenuState(StateManager* m, sf::RenderWindow &win) : State(m,win) , cursor(Piece::BLACK), cursor2(Piece::WHITE){
 
 }

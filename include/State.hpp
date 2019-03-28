@@ -1,6 +1,6 @@
 #ifndef STATE
 #define STATE
-#include "StateManager.hpp"
+#include <StateManager.hpp>
 
 class StateManager;
 class State{

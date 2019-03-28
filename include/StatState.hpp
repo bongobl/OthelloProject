@@ -1,7 +1,7 @@
 #ifndef STAT_STATE
 #define STAT_STATE
-#include "State.hpp"
-#include "Piece.hpp"
+#include <State.hpp>
+#include <Piece.hpp>
 
 
 class StatState : public State{
